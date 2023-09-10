@@ -1,0 +1,39 @@
+/* Branch Styles Page */
+
+/* BranchList */
+.games-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+
+  .games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* BranchCardC */
+    .BranchCardC {
+      width: 200px;
+      margin: 15px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

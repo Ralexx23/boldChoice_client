@@ -1,0 +1,100 @@
+/* Home Style Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: auto;
+  height: auto;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #1b1b1b;
+  gap: 25%;
+
+  .logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+    ul li {
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .itemNav {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: lighter;
+      letter-spacing: 0.1rem;
+      padding: 0.5rem;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 30vh;
+  background-color: #1b1b1b;
+
+  div {
+    width: 60%;
+
+    h3 {
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-size: 1.3rem;
+      font-weight: lighter;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    p {
+      margin-top: 1%;
+      color: #dedede;
+      font-size: 1rem;
+    }
+  }
+
+  p {
+    color: #dedede;
+    font-size: 1rem;
+  }
+}
+
+/* Home */
+.h1Home {
+  width: 100%;
+  height: 100vh;
+  background-color: #e4e6e6;
+}

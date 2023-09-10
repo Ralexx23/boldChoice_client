@@ -1,0 +1,8 @@
+node_modules# Logs
+logs
+package-lock.json
+*.env
+node_modules
+dist
+dist-ssr
+public/media
