@@ -2,38 +2,49 @@
 
 /* BranchList */
 .games-section {
-  text-align: center;
+  background-color: #fff;
   padding: 20px;
-  background-color: #f7f7f7;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-  .games-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.games-section h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-    /* BranchCardC */
-    .BranchCardC {
-      width: 200px;
-      margin: 15px;
-      padding: 10px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s ease-in-out;
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-      &:hover {
-        transform: scale(1.05);
-      }
+.link_cardBranch {
+  text-decoration: none;
+  color: #333;
+}
 
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+.cardBranch {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
 
-      h2 {
-        font-size: 18px;
-        margin-top: 10px;
-      }
-    }
-  }
+.cardBranch:hover {
+  transform: scale(1.05);
+}
+
+.cardBranch img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.branch {
+  font-size: 18px;
+  margin-top: 10px;
 }

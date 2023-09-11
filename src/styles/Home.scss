@@ -40,9 +40,17 @@ nav {
     align-items: center;
     width: 40%;
 
-    ul li {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
       list-style: none;
-      cursor: pointer;
+
+      li {
+        list-style: none;
+        cursor: pointer;
+      }
     }
 
     .itemNav {
