@@ -27,7 +27,7 @@ const UsersDel = ({ value }: any) => {
       <form action="" method="DELETE" className="form_gamesDel">
         <div className="comp_GamesDel">
           <FormGroup floating>
-          
+          <Label htmlFor="">ID:</Label>
           <Input
             type="text"
             name="id"
@@ -35,7 +35,6 @@ const UsersDel = ({ value }: any) => {
             value={id}
             onChange={handleInputChange}
           />
-          <Label htmlFor="">ID:</Label>
           </FormGroup>
         </div>
 

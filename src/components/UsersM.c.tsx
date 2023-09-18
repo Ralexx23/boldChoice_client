@@ -28,7 +28,7 @@ const UsersM = ({ value }: any) => {
     rows: users,
   };
 
-  return <Udatagrid data={GridProps} />;
+  return <div className="contDatagrid"><Udatagrid data={GridProps} /></div>;
 };
 
 export default UsersM;

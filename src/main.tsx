@@ -6,6 +6,7 @@ import App from "./App";
 import "./styles/Home.scss";
 import "./styles/Authentication.scss";
 import "./styles/Branch.scss";
+import "./styles/Users.scss";
 
 const Render = () => {
   const rootElement = document.getElementById("root");

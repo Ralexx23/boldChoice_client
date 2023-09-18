@@ -48,3 +48,175 @@
   font-size: 18px;
   margin-top: 10px;
 }
+
+
+/* Questions */
+
+// Estilos SCSS con colores
+.cont_game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.question {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.question_current {
+  font-size: 18px;
+}
+
+.question_reset {
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.question_letters {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.question_answer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  .answers {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+
+    &.answer_correct {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    &.answer_incorrect {
+      background-color: #ff5733;
+      color: #fff;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+.question_next {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.gameDisa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game_title {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333; /* Cambia el color del título aquí */
+}
+
+.game_img {
+  margin-top: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  p {
+    margin-top: 10px;
+    color: #555; /* Cambia el color del texto aquí */
+  }
+}
+
+.btn_gameOut {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/* Game Over - Result */
+// Estilos SCSS para la vista de resultados
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  height: 70vh;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.result_title {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333; /* Cambia el color del título aquí */
+}
+
+.result_info {
+  margin-top: 20px;
+  font-size: 18px;
+  
+  span {
+    color: #555; /* Cambia el color del texto aquí */
+  }
+
+  .result_porcent {
+    color: #007bff; /* Cambia el color del porcentaje aquí */
+    font-weight: bold;
+  }
+}
+
+.result_reset {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}

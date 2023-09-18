@@ -4,11 +4,7 @@ const Results = ({ score, questionsFiltered, onReset }: any) => {
       <h1 className="result_title">Resultados</h1>
 
       <div className="result_info">
-        <span>Acertaste</span>
-        <span className="result_porcent">
-          {((score / questionsFiltered.length) * 100).toFixed(0)}%
-        </span>
-        de las preguntas ({score} de {questionsFiltered.length})
+        <p>Acertaste el<span className="result_porcent"> {((score / questionsFiltered.length) * 100).toFixed(0)}%</span> de las preguntas ({score} de {questionsFiltered.length})</p>
       </div>
 
       <button
