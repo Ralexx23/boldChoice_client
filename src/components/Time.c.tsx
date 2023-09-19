@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface Props {
   initialTime: number;
@@ -20,6 +20,6 @@ const TimerComponent: React.FC<Props> = ({ initialTime, rese }) => {
       <h2>{time}</h2>
     </div>
   );
-}
+};
 
 export default TimerComponent;

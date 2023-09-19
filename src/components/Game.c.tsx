@@ -13,9 +13,11 @@ const Game = (gameBranch: any) => {
   const { branch } = useParams();
   const [indexQuestion, setIndexQuestion] = useState(0);
   const [activeQuiz, setActiveQuiz] = useState(false);
+  const [newQuestions, setNewQuestions] = useState(
+    shuffleArray(gameBranch.gameBranch.questions)
+  );
 
-  const newQuestions = shuffleArray(gameBranch.gameBranch.questions);
-  console.log(newQuestions[indexQuestion]);
+  console.log(newQuestions);
   return (
     <div className="cont_game">
       {activeQuiz ? (
