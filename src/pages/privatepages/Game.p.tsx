@@ -35,7 +35,6 @@ const GameP = () => {
   if (!gameBranch) {
     return <div>Loading...</div>;
   }
-
   return <GameC gameBranch={gameBranch} />;
 };
 export default GameP;

@@ -1,42 +1,21 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Question from "../components/Questions.c";
-//import { questions, imgs } from "../data";
 
 // Función para barajar las preguntas de cada categoría y también reducirla al número de 5
 const shuffleArray = (array: any) => {
   const newArray = array.sort(() => Math.random() - 0.5);
-  return newArray.slice(0, 5);
+  return newArray;
 };
 
 const Game = (gameBranch: any) => {
   // Leer El parametro de la URL
   const { branch } = useParams();
-
-  /* const imgBranch = imgs
-    .map((img) => {
-      const startIndex = 12;
-      const puntoIndex = img.indexOf(".", startIndex);
-      const subcadena = img.substring(startIndex, puntoIndex);
-      if (subcadena === branch?.toLowerCase()) return subcadena;
-    })
-    .filter((i) => i !== undefined);
-
-  /*   const [questionsFiltered, setQuestionsFiltered] = useState(
-    gameBranch.gameBranch.questionsons.map((question: any) => {
-      if (question.category === branch) return question;
-    })
-  ); */
   const [indexQuestion, setIndexQuestion] = useState(0);
   const [activeQuiz, setActiveQuiz] = useState(false);
 
-  /*   useEffect(() => {
-    const newQuestions = shuffleArray(gameBranch.gameBranch.questionsons);
-    setQuestionsFiltered(newQuestions);
-  }, []); */
-
   const newQuestions = shuffleArray(gameBranch.gameBranch.questions);
-
+  console.log(newQuestions[indexQuestion]);
   return (
     <div className="cont_game">
       {activeQuiz ? (
